@@ -1,0 +1,16 @@
+{
+  "name": "hmi-studios",
+  "version": "1.0.0",
+  "description": "HMI Studios website",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "main": "eleventy.config.js",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
