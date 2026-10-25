@@ -1,15 +1,24 @@
 ---
-layout: base.njk
-title: Home
+layout: root.njk
 section: home
 ---
-<div id="home">
-  <img id="headshot" />
-  <p>STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF STUFF</p>
+<div id="hero">
+  <div class="carousel">
+    <img src="{{ home.heroImages[0].src }}" />
+  </div>
+  <img class="logo" src="/img/logo.png" />
 </div>
 
-<div id="banner">
-  <span>PHOTOGRAPHER</span>
-  <span>GRAPHIC DESIGNER</span>
-  <span>ILLUSTRATOR</span>
+{% include 'navbar.njk' %}
+
+<div class="page">
+  <div id="banner" class="text-big">
+    <span>PHOTOGRAPHER</span>
+    <span>GRAPHIC DESIGNER</span>
+    <span>ILLUSTRATOR</span>
+  </div>
 </div>
+
+<h1>Hello! You’ve stumbled upon yet another gallery!</h1>
+<p class="text-big">My name is Casey Niemelae and I am an artist living in Stockholm, Sweden. I use photography and graphic design to create the works you will see on this website. Here, you can browse my projects and get in touch with me. I am happy to share my artwork and give your life some extra color and character. </p>
+
