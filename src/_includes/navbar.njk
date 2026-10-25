@@ -1,0 +1,10 @@
+<nav class="navbar">
+  <ul>
+    <li><a href="/" {% if section == "home" %}class="active"{% endif %}>Home</a></li>
+    <li><a href="/photography/" {% if section == "photography" %}class="active"{% endif %}>Explore Photography</a></li>
+    <li><a href="/designs/" {% if section == "designs" %}class="active"{% endif %}>Explore Designs</a></li>
+    <li><a href="/artwork/" {% if section == "artwork" %}class="active"{% endif %}>Explore Artwork</a></li>
+    <li><a href="/contact/" {% if section == "contact" %}class="active"{% endif %}>Contact</a></li>
+    <li><a href="/about/" {% if section == "about" %}class="active"{% endif %}>About Me</a></li>
+  </ul>
+</nav>

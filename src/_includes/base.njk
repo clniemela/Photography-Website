@@ -1,34 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{% if title %}{{ title }} — HMI Studios{% else %}HMI Studios{% endif %}</title>
-<link rel="stylesheet" href="/css/style.css">
-<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-<script defer src="https://analytics.hmi.dynu.net/script.js" data-website-id="9f2506bf-9844-4553-aa18-d3624027e57b"></script>
-</head>
-<body>
-
-<nav class="navbar">
-  <ul>
-    <li><a href="/" {% if section == "home" %}class="active"{% endif %}>Home</a></li>
-    <li><a href="/photography/" {% if section == "photography" %}class="active"{% endif %}>Explore Photography</a></li>
-    <li><a href="/designs/" {% if section == "designs" %}class="active"{% endif %}>Explore Designs</a></li>
-    <li><a href="/artwork/" {% if section == "artwork" %}class="active"{% endif %}>Explore Artwork</a></li>
-    <li><a href="/contact/" {% if section == "contact" %}class="active"{% endif %}>Contact</a></li>
-    <li><a href="/about/" {% if section == "about" %}class="active"{% endif %}>About Me</a></li>
-  </ul>
-</nav>
+---
+layout: root.njk
+---
+{% include 'navbar.njk' %}
 
 <div class="page">
   {{ content | safe }}
 </div>
-
-<footer>
-  <div class="footer-logo">HMI Studios</div>
-  <p class="footer-copy">&copy; {% year %} HMI Studios · <a href="/privacy-policy" class="link">Privacy Policy</a></p>
-</footer>
-
-</body>
-</html>

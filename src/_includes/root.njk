@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% if title %}{{ title }} — Cas Pictures{% else %}Cas Pictures{% endif %}</title>
+<link rel="stylesheet" href="/css/style.css">
+<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+<link rel="icon" href="/img/favicon.ico" type="image/x-icon" media="(prefers-color-scheme: light)">
+<link rel="icon" href="/img/favicon-dark.ico" type="image/x-icon" media="(prefers-color-scheme: dark)">
+<script defer src="https://analytics.hmi.dynu.net/script.js" data-website-id="9f2506bf-9844-4553-aa18-d3624027e57b"></script>
+</head>
+<body>
+
+{{ content | safe }}
+
+<footer>
+  <div class="footer-logo">HMI Studios</div>
+  <p class="footer-copy">&copy; {% year %} HMI Studios · <a href="/privacy-policy" class="link">Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>
